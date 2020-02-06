@@ -4,11 +4,16 @@
 }
 
 body {
-    background-color: #393e46;
+    background-color: #222831;
+}
+
+hr {
+    border-color: #00adb5;
+    
 }
 
 .navbar {
-    background-color: #393e46;
+    background-color: #222831;
     text-align: center;
 }
 
@@ -29,7 +34,7 @@ nav li {
 }
 
 .wrapper {
-    background-color: #393e46;
+    background-color: #222831;
     display: grid;
     grid-template-columns: repeat(5, [col] 20% ) ;
     grid-template-rows: repeat(3, [row] auto  );
@@ -93,7 +98,7 @@ nav li {
 .a p {
     font-size: 1rem;
     text-align: center;
-    color: #222831;
+    color: #393e46;
     
     
 }
