@@ -1,27 +1,19 @@
 /* color palette = https://colorhunt.co/palette/2763 */
-* {
-    font-family: "PT Sans, sans-serif";
-}
 
 body {
-    background-color: #222831;
-}
-
-hr {
-    border-color: #00adb5;
-    
+    background-color: #eeeeee;
 }
 
 .navbar {
-    background-color: #222831;
+    background-color: #eeeeee;
     text-align: center;
 }
 
 a {
     text-decoration: none;
-    text-shadow: 1px 1px 12px #eeeeee ;
     font-size: 1rem;
     color: #00adb5;
+    
 }
 
 nav ul {
@@ -34,11 +26,10 @@ nav li {
 }
 
 .wrapper {
-    background-color: #222831;
+    background-color: #eeeeee;
     display: grid;
     grid-template-columns: repeat(5, [col] 20% ) ;
-    grid-template-rows: repeat(4, [row] auto  );
-    
+    grid-template-rows: repeat(7, [row] auto  );
     color: #444;
 }
 
@@ -57,6 +48,8 @@ nav li {
     grid-column: col  / span  2;
     grid-row: row ;
     text-align: center;
+    color: #393e46;
+    margin-top: 60px;
     
     
 }
@@ -69,7 +62,6 @@ nav li {
 .c {
     grid-column: col 3 / span 1;
     grid-row: row 2 ;
-    /* margin-bottom: 60px; */
     height: 300px;
     
     
@@ -81,20 +73,15 @@ nav li {
     font-size: 6rem;
     color: #393e46;
     text-align: center;
-    margin-bottom: 120px;
-
 }
 
 .e {
     grid-column: col 2 / span  3;
     grid-row: row 3 ;
-    background-color: #393e46;
+    color: #393e46;
     z-index: 20;
     margin-top: 90px;
-    opacity: 70%;
-    
-    
-}
+ }
 
 .f {
     grid-column: col 4 / span 2;
@@ -110,10 +97,16 @@ nav li {
     grid-row: row 4 ;
     height: 300px;
 }
+
 .h {
     grid-column: col 1 / span  2 ;
-    grid-row: row 5 ;    
+    grid-row: row 5 ;
+    opacity: 6%;
+    margin-top: 100px; 
+    transform: rotate(-45deg);
+    border: none;
 }
+
 .i {
     grid-column: col 4 / span  2 ;
     grid-row: row 5;    
@@ -123,32 +116,93 @@ nav li {
     text-align: center;
     margin-bottom: 120px;
 }
+
 .j {
     grid-column: col 2 / span  3 ;
     grid-row: row 5;
     z-index: 20;    
+    text-align: center;
+    margin-top: 100px;
+}
+
+.k {
+    grid-column: col 3 / span 1;
+    grid-row: row 6 ;
+    height: 300px;
+}
+
+.l {
+    grid-column: col 1 / span 2;
+    grid-row: row 7 ;
+    z-index: 10;
+    font-size: 6rem;
+    color: #393e46;
+    text-align: center;
+}
+
+.m {
+    grid-column: col 2 / span 3;
+    grid-row: row 7 ;
+    z-index: 20;
+    margin-top: 110px;
+    text-align: center;
+    
+}
+
+.n {
+    grid-column: col 4 / span 2;
+    grid-row: row 7 ;
 }
 
 /* custom class designations */
 
 .profile-image {
     border-radius: 50%;
-    filter: brightness(35%);
+    filter: brightness(85%);
 }
 
 .a p {
     font-size: 1rem;
     text-align: center;
-    color: #00adb5;
+    color: #393e46;
 }
 
 .about-content {
     opacity: 100%;
 }
 
+.skill-images {
+    margin: 6px;
+}
+
+.card {
+    box-shadow: 0 0px 8px 0 black;
+    transition: 0.3s;
+    display: inline-block;
+    margin: 10px;
+    
+    
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0;
+}
+
+.card-container {
+    padding: 2px 16px;
+    color: #393e46;
+}
 
 /* custom ID designations */
 
-#fullstack-text {
-    color:  #00adb5;
+#web-developer {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    color: #00adb5;
+}
+
+#about,
+#skills,
+#projects {
+    font-family: 'Dancing Script', cursive;
 }
