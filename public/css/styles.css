@@ -307,3 +307,7 @@ input[type=submit]:hover {
     font-family: 'Dancing Script', cursive;
 }
 
+#gitlink {
+    font-size: 1.7rem;
+    text-decoration: underline;
+}
