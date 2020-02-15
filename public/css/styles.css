@@ -26,7 +26,7 @@ a {
     color: #00adb5;  
 }
 
-p {
+.about-format {
     color: #eeeeee;
     text-align: left;
 }
@@ -136,6 +136,24 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #00acb5bb;
+}
+
+.failPageContent {
+    text-align: center;
+    margin-top: 100px;
+    color: #eeeeee;
+}
+
+.failButton {
+    background-color: #00adb5;
+    color: #eeeeee;
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    box-shadow: 1px 2px 3px black;
+    width: 10%;
+
 }
 
 
@@ -335,22 +353,11 @@ input[type=submit]:hover {
 /* ********** OLD CODE ********** */
 
 
-/* .failPageContent {
-    text-align: center;
-    margin-top: 100px;
-}
+/* 
 
-.failButton {
-    background-color: rgba(211, 211, 93, 0.925);
-    border-radius: 10px;
-    padding: 10px 15px 10px 15px;
-    box-shadow: 1px 2px 3px black;
-}
 
-.failH1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 5rem;
-} */
+
+
 
 
 
