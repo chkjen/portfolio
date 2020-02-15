@@ -13,6 +13,19 @@ app.get("/", function (req, res){
     res.sendFile(__dirname + "/index.html");
 });
 
+app.get("/todolist.html", function (req, res){
+    res.sendFile(__dirname + "/todolist.html");
+});
+
+app.get("/workinprogress.html", function (req, res){
+    res.sendFile(__dirname + "/workinprogress.html");
+});
+
+app.get("/completedprojects.html", function (req, res){
+    res.sendFile(__dirname + "/completedprojects.html");
+});
+
+
 app.post("/", function(req, res){
 
    let firstName = req.body.fName;
