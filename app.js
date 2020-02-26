@@ -3,11 +3,13 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
 
+
 const app = express();
 app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
+
 
 app.get("/", function (req, res){
     res.sendFile(__dirname + "/index.html");
@@ -24,6 +26,7 @@ app.get("/workinprogress.html", function (req, res){
 app.get("/completedprojects.html", function (req, res){
     res.sendFile(__dirname + "/completedprojects.html");
 });
+
 
 
 app.post("/", function(req, res){
@@ -74,6 +77,11 @@ request(options, function(error, response, body){
 app.post("/failure", function(req, res){
     res.redirect("/");
 });
+
+
+
+
+
 
 app.listen(process.env.PORT || 3000, function(){
     console.log("Server started successfully.");

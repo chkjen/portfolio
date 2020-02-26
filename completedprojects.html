@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yay!</title>
+    <title>Completed Works</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="topNav" id="myTopnav">
-        <a href="/">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>   
+        <a href="/">Home</a>  
         <a href="javascript:void(0);" class="icon" onclick="navFunction()">
             <i class="fa fa-bars"></i>
         </a>    
     </div>
+
+    <div>
+        <div class="row-1">
+            <div class="col-12 col-s-12">
+                <h2 class="section-header cursive-font">Completed Projects</h2>
+                <hr>
+            </div>
+        </div>
+
+        <p class = "altpagetext">This page will display any works that I am able to showcase that aren't under an NDA. I'm currently in the process of getting projects uploaded to git hub so this text will act as a placeholder for the time being. Thanks for stopping by!</p>
+
+    </div>
     
+    <hr id="full-hr">
+    <p id="copyright">Copyright © <script type="text/JavaScript"> document.write(new Date().getFullYear());</script> Charles Kjendalen</p>
+
+    <script>
+        function navFunction(){
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topNav")  {
+                x.className += " responsive";
+            } else {
+                x.className = "topNav";
+            }
+        }
+    </script>
 </body>
 </html>

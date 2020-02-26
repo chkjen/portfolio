@@ -156,6 +156,11 @@ input[type=submit]:hover {
 
 }
 
+.altpagetext {
+    color: #eeeeee;
+    text-align: center;
+}
+
 
 /* ********* CUSTOM IDS ********* */
 
@@ -183,6 +188,12 @@ input[type=submit]:hover {
 #full-hr {
     width: 100%;
 }
+
+#copyright {
+    color: #eeeeee;
+    filter: brightness(50%);
+}
+
 
 
 
